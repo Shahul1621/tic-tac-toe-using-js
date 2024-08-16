@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:black ;
+    background-image: url(dice-bg.png);
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 20px;
+    color:rgb(208, 0, 255);
+    font-family:monospace;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 100px;
+    margin-left: 170px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: #f0f0;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #4caf50;
+}
+
+.status {
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
